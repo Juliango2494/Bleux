@@ -1,0 +1,253 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --color1:#1E172F;
+    --color2:#5F576E;
+    --color3:white;
+    --color4:#f91785;
+    --grisFondo:rgb(238, 238, 237);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color1);
+    gap: 20%;
+    justify-content: space-evenly;
+}
+.buttonsNav{
+    display: flex;
+    padding: 5px;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:var(--color2) ;
+    &:hover{
+        color: var(--color3);
+    }
+}
+.buttonNav{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: linear-gradient(to right,#a32dd1 ,#5850C9) ;
+    border-color: var(--color1);
+    color: var(--color3);
+    cursor: pointer;
+    &:hover{
+        background-color: #5F576E;
+        border: none;
+    }
+}
+header{
+    display: flex;
+    height: 80vh;
+}
+.header1{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color1);
+    
+    width: 50%;
+    color: var(--color3);
+    justify-content: center;
+    
+    gap: 50px;
+    h1{
+        font-size: 60px;
+    }
+    padding-left: 15%;
+    
+}
+
+.header2{
+    background: url(/assets/images/hojasFondo.jpg) center/cover no-repeat  ;
+    width: 50%;
+    height: 100%;
+  
+    img{
+        height: 350px;
+        margin:13% 0 0 15%;
+    }
+}
+.buttonsHeader1{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: var(--color2);
+    padding: 5px;
+    width: 60%;
+    button{
+        padding: 9px 11%;
+        border-radius: 4px;
+        border-color: var(--color3);
+        background: none;
+        color: var(--color3);
+        &:hover{
+            background-color: var(--color3);
+            color: var(--color4);
+        }
+    }
+    
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 5%;
+    img{
+        width: 450px;
+    }
+    h2{
+        font-size: 40px;
+        color: var(--color4);
+    }
+}
+.article1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10%;
+}
+.article2{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 30%;
+    gap: 20px;
+    h3{
+        font-size: 28px;
+        color: var(--color4);
+    }
+    #a1{
+        display: flex;
+        flex-direction: row;
+    }
+    span{
+        font-size: 40px;
+        color: var(--color4);
+        margin-right: 7px;
+    }
+    .p{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    i{
+        color: var(--color4);
+        margin-right: 7px;
+    }
+}
+.plansPricing{
+    background-color: var(--color1);
+    color: var(--color3);
+    h2{color: var(--color3)}
+    .textPlans{width: 50%;text-align: center;margin: 50px 50px;}     
+    img{width: 80px;margin-bottom: -0px;}
+    padding: 30px 10%;
+    #lite{color: var(--color4);}
+}
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    margin-bottom: 50px;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--color3);
+    width: 300px;
+    color: var(--color1);
+    padding: 10px 4%;
+    .spanPrices{font-size: 35px;};
+    .priceBackgrd{
+        background-color: var(--grisFondo);
+        display: flex;
+        justify-content: center;
+        width: 134%;
+        padding: 10px 0;
+    }
+    .cardServices{display: flex;flex-direction: row;gap: 30px;}
+    .cardList{display: flex;flex-direction: column; gap: 15px;margin: 45px 0;}
+    .buttonCont{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        background-color:var(--grisFondo);
+        padding: 5px 0;
+        width: 134%;
+        transition: transform 0.6s ease-in-out;
+    }
+    button{
+        padding: 10px 30px;
+        color: var(--color3);
+        background-color: var(--color1);
+        border-radius: 5px;
+    }
+    .pinkButton{background-color: var(--color4);border: none;transition: transform 0.2s ease-in-out;}
+    #star{color: var(--color4);}
+    #check{color: var(--color4);}
+    .pinkButton:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    
+}
+.card1:hover{
+    transform: scale(1.01);
+}
+
+footer{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+    .logosFoot{
+        display: flex;
+        gap: 25%;
+    }
+    span{
+        color: var(--color4);
+    }
+}
+@media (max-width: 1279px){
+    .buttonsNav{width: 45%;}
+    .header2{img{height: 320px;margin:15% 0 0 15%;};}
+    .buttonsHeader1{width: 90%;button{padding: 9px 10%;};}
+}
+@media (max-width: 920px){
+    .buttonsNav{width: 52%;}
+    .header2{img{height: 320px;margin:22% 0 0 22%;};}
+    .buttonsHeader1{width: 90%;button{padding: 9px 10%;};}
+    .header1{padding-left: 10%;}
+    .article1{img{width: 350px;height: 350px;};.article2{width: 40%;gap: 7px;}}
+    .cardContainer{gap: 1%;}
+    .card1{
+        width: 250px;
+        padding: 10px 3%;
+        .priceBackgrd{width: 121%;};
+        .buttonCont{width: 121%;}
+    }
+    .plansPricing{.textPlans{width: 70%;margin: 50px 10px;}} 
+}
+@media (max-width: 768px){
+    nav{gap: 5%;}
+    .buttonsNav{width: 70%;flex-wrap: wrap;}
+    .header2{img{height: 260px;margin:58% 0 0 22%;};}
+    .buttonsHeader1{width: 90%;button{padding: 9px 3%;};}
+    .header1{padding-left: 5%;h1{font-size: 50px;}}
+    .article1{display: flex;flex-wrap: wrap; gap: 1%;img{width: 250px;height: 250px;};.article2{width: 60%;gap: 7px;}}
+}
+
