@@ -67,7 +67,7 @@ header{
 }
 
 .header2{
-    background: url(/assets/images/hojasFondo.jpg) center/cover no-repeat  ;
+    background: url(../assets/images/hojasFondo.jpg) center/cover no-repeat  ;
     width: 50%;
     height: 100%;
   
